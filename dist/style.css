@@ -6,109 +6,106 @@
   --border: #29292E;
   --border-menu-mobile: #A8A8B3;
   --text-color-menu-mobile: #E1E1E6;
+  --font-website: 'manrope', Arial, Helvetica, sans-serif;
+}
+
+.hidden {
+  display: none;
 }
 
 body {
   background-color: var(--background);
-}
-
-.container {
-  padding: 3em;
+  padding: 0px 20px;
 }
 
 header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-family: 'Manrope',sans-serif;
-  font-size: 1em;
-  margin-bottom: 2em;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row;
-          flex-flow: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 20px 0;
+  font-family: var(--font-website);
 }
 
-header img {
-  width: 4%;
-}
-
-header nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-header nav a {
-  text-decoration: none;
-  color: white;
-  margin: 1em;
-}
-
-header button {
-  background-color: transparent;
-  border-radius: 5pt;
-  border: 2px solid purple;
-  padding: 5px  2.3em;
-  color: #e4e4e4;
-  height: 2.5em;
-  font-family: 'manrope',sans-serif;
-  font-size: 1em;
-  font-weight: 700;
+hr {
+  width: 100vw;
+  position: relative;
+  left: -30px;
 }
 
 main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  color: white;
   text-align: center;
+  font-family: var(--font-website);
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-main h2 {
-  font-family: 'Manrope';
-  font-size: 6em;
-  line-height: .25em;
-  font-weight: bolder;
+main .message {
+  margin: 3em 13%;
+  font-size: 2em;
+  height: 16vh;
+}
+
+main button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: transparent;
   color: white;
+  border: 2px solid var(--button);
+  border-radius: 5pt;
+  padding: .5em 2em;
+  font-family: var(--font-website);
+  font-size: .7em;
+  text-transform: uppercase;
 }
 
-main h2:last-child {
-  color: var(--background);
+main .coffeeText {
+  -ms-flex-preferred-size: 2;
+      flex-basis: 2;
+  margin: 3em 0;
+  width: 100vw;
+  font-size: 2em;
+  line-height: 10px;
+}
+
+main .coffeeText h2:last-child {
+  color: black;
   text-shadow: -1px -1px 0 var(--button), 1px -1px 0 var(--button), -1px 1px 0 var(--button), 1px 1px 0 var(--button);
 }
 
 main .coffee {
+  width: 450px;
   position: absolute;
-  bottom: 0;
-  z-index: -9;
+  bottom: 0px;
 }
 
-main .blur_top {
+main .blur_mobile {
   position: absolute;
-  top: 0;
-  right: 0;
-}
-
-main .blur_bot {
-  position: absolute;
+  width: 100%;
+  max-width: 900px;
   bottom: 0;
-  left: 0;
-  z-index: -10;
 }
 /*# sourceMappingURL=style.css.map */
