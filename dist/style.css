@@ -10,14 +10,6 @@
 
 body {
   background-color: var(--background);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 .container {
@@ -31,24 +23,35 @@ header {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  width: 80vw;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   font-family: 'Manrope',sans-serif;
   font-size: 1em;
   margin-bottom: 2em;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
 }
 
-header a {
-  position: relative;
-  left: calc(12%);
-  text-decoration: none;
+header img {
+  width: 4%;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+header nav a {
+  text-decoration: none;
   color: white;
-  padding: 1em;
+  margin: 1em;
 }
 
 header button {
@@ -71,12 +74,10 @@ main {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
 }
 
 main h2 {
@@ -93,8 +94,9 @@ main h2:last-child {
 }
 
 main .coffee {
-  position: relative;
+  position: absolute;
   bottom: 0;
+  z-index: -9;
 }
 
 main .blur_top {
@@ -107,5 +109,6 @@ main .blur_bot {
   position: absolute;
   bottom: 0;
   left: 0;
+  z-index: -10;
 }
 /*# sourceMappingURL=style.css.map */
