@@ -1,4 +1,5 @@
 ## RocketCoffee - A RocketSeat challenge
+Checkout my project [clicking here!](https://juniokoi.github.io/RocketCoffee/)
 ### Project images:
 
 <!-- Images -->
