@@ -4,14 +4,14 @@
 <!-- Images -->
 ![GIF-demo](https://user-images.githubusercontent.com/53125029/166113061-564b2467-97ec-490f-b372-f9cb93d7e9c5.gif)<br>
 
----
+<!-- ---
 
 ![Desktop-image](https://user-images.githubusercontent.com/53125029/166111655-760e338a-da1c-4747-bd62-0c06c10cdc41.png)<br>
 
 ---
 
 ![Mobile-img](https://user-images.githubusercontent.com/53125029/166111746-5f97efa1-4d1a-428b-9be3-e96be5153695.png)
-![Mobile-hamburger-demo](https://user-images.githubusercontent.com/53125029/166111789-5af970c2-6e62-46a7-af3a-7708cf5a69a2.png)
+![Mobile-hamburger-demo](https://user-images.githubusercontent.com/53125029/166111789-5af970c2-6e62-46a7-af3a-7708cf5a69a2.png) -->
 
 <!-- Text -->
 ### Personal challenges
